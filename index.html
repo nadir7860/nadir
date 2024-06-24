@@ -11,20 +11,19 @@
 
 <body class="body-background text-white">
 
-    <!-- Navigation -->
-    <nav class="bg-gray-800 p-4 fixed w-full z-10 top-0">
-        <div class="container mx-auto flex justify-between items-center">
-            <div>
-                <a href="#about" class="text-lg font-bold">About Me</a>
-                <a href="#skills" class="ml-6 text-lg font-bold">Skills</a>
-                <a href="#certificates" class="ml-6 text-lg font-bold">Certificates</a>
-                <a href="#contact" class="ml-6 text-lg font-bold">Contact</a>
-            </div>
-            <div>
-                <a href="Nadirs_Resume.pdf" download="Nadirs_Resume.pdf" class="bg-yellow-400 text-black px-4 py-2 rounded-md">Download Resume</a>
-            </div>
-        </div>
-    </nav>
+   <!-- Navigation Bar -->
+   <nav class="bg-gray-800 p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">Nadir Shaikh</a>
+        <ul class="flex space-x-4">
+            <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+            <li><a href="#skills" class="hover:text-yellow-400">Skills</a></li>
+            <li><a href="#certificates" class="hover:text-yellow-400">Certificates</a></li>
+            <li><a href="#contact-info" class="hover:text-yellow-400">Contact Information</a></li>
+            <li><a href="#resume" class="text-white">Download Resume</a></li>
+        </ul>
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <section class="bg-black-200 text-center py-20">
@@ -113,28 +112,6 @@
             <!-- Add more certificates as needed -->
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container mx-auto py-16 bg-gray-900 rounded-lg shadow-lg mt-16">
-        <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
-        <div class="max-w-lg mx-auto">
-            <form id="contact-form" class="bg-gray-800 p-8 shadow-lg rounded-lg">
-                <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium">Name</label>
-                    <input type="text" id="name" class="mt-1 block w-full p-2 bg-gray-100 text-black border border-gray-700 rounded-md" required>
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-sm font-medium">Email</label>
-                    <input type="email" id="email" class="mt-1 block w-full p-2 bg-gray-100 text-black border border-gray-700 rounded-md" required>
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-sm font-medium">Message</label>
-                    <textarea id="message" class="mt-1 block w-full p-2 bg-gray-100 text-black border border-gray-700 rounded-md" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="w-full bg-yellow-400 text-black py-2 rounded-md hover:bg-yellow-500 transition-colors">Send Message</button>
-            </form>
-        </div>
-    </section>
     <!-- Contact Information Section -->
 <section id="contact-info" class="container mx-auto py-16 bg-gray-900 bg-opacity-80 rounded-lg shadow-lg mt-16">
     <h2 class="text-3xl font-bold text-center mb-8">Contact Information</h2>
@@ -145,6 +122,15 @@
         <p class="text-lg mt-4">
             <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nadir-shaikh-/" target="_blank" class="text-yellow-400">Nadir Shaikh</a>
         </p>
+    </div>
+</section>
+    <!-- Resume Section -->
+<section id="resume" class="container mx-auto py-16 bg-gray-900 bg-opacity-80 rounded-lg shadow-lg mt-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Download My Resume</h2>
+    <div class="text-center">
+        <a href="C:\Users\Nadir\Desktop\portfolio\Nadirs_Resume.pdf" download class="bg-yellow-400 text-black px-4 py-2 rounded-md">
+            Download Resume
+        </a>
     </div>
 </section>
 
