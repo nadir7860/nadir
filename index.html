@@ -11,18 +11,24 @@
 
 <body class="body-background text-white">
 
-   <!-- Navigation Bar -->
-   <nav class="bg-gray-800 p-4 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center">
-        <a href="#" class="text-2xl font-bold">Nadir Shaikh</a>
-        <ul class="flex space-x-4">
-            <li><a href="#about" class="hover:text-yellow-400">About</a></li>
-            <li><a href="#skills" class="hover:text-yellow-400">Skills</a></li>
-            <li><a href="#certificates" class="hover:text-yellow-400">Certificates</a></li>
-            <li><a href="#contact-info" class="hover:text-yellow-400">Contact Information</a></li>
-            <li><a href="#resume" class="text-white">Download Resume</a></li>
-        </ul>
-    </div>
+   <!-- Navigation -->
+    <nav class="bg-gray-800 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Nadir Shaikh</a>
+            <!-- Hamburger Icon -->
+            <div class="block lg:hidden">
+                <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-yellow-400">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+            <ul id="nav-content" class="hidden lg:flex space-x-4">
+                <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+                <li><a href="#skills" class="hover:text-yellow-400">Skills</a></li>
+                <li><a href="#certificates" class="hover:text-yellow-400">Certificates</a></li>
+                <li><a href="#contact-info" class="hover:text-yellow-400">Contact Information</a></li>
+                <li><a href="#resume" class="text-white">Download Resume</a></li>
+            </ul>
+        </div>
         <!-- Mobile Menu -->
         <div id="nav-mobile" class="lg:hidden p-4 hidden">
             <ul class="space-y-4">
@@ -33,7 +39,7 @@
                 <li><a href="#resume" class="block bg-gray-900 p-2 rounded hover:text-yellow-400">Download Resume</a></li>
             </ul>
         </div>
-</nav>
+    </nav>
 
     <!-- Hero Section -->
     <section class="bg-black-200 text-center py-20">
